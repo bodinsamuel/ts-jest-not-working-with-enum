@@ -1,4 +1,4 @@
-import { Biome } from '../types/tet';
+import { Biome } from './tet';
 
 describe('hello', () => {
   it('should load', () => {

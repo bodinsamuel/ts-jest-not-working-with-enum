@@ -6,9 +6,6 @@ module.exports = {
   preset: 'ts-jest',
   verbose: true,
   testEnvironment: 'node',
-  moduleNameMapper: {
-    '~types/(.*)$': '<rootDir>/src/types/$1',
-  },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
@@ -16,12 +13,4 @@ module.exports = {
   coveragePathIgnorePatterns: ['/node_modules/'],
   moduleDirectories: ['<rootDir>/node_modules', '<rootDir>/src'],
   roots: ['src'],
-  globals: {
-    'ts-jest': {
-      diagnostics: {
-        tsConfigFile: 'tsconfig.json',
-        enableTsDiagnostics: true,
-      },
-    },
-  },
 };
